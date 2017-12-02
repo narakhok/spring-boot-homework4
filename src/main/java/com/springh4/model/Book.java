@@ -75,4 +75,5 @@ public class Book {
 				+ page + ", coverImage=" + coverImage + "]";
 	}
 
+
 }

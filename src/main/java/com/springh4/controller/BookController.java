@@ -56,8 +56,8 @@ public class BookController {
 		return "redirect:/index";
 	}
 
-	@PostMapping("/book/edit") // @RequestMapping(value ="/book/edit")
-	public String editBook(Model model, @RequestParam("id") Integer id) {
+	@GetMapping("/book/edit") // @RequestMapping(value ="/book/edit")
+	public String editBook(@RequestParam("id") Integer id, Model model) {
 		System.out.println("Id:" + id);
 
 		Book book = bookService.findByID(id);
